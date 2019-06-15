@@ -29,3 +29,14 @@ Required data files:
 Seabass_header_ACS5.mat
 Sullivan_VALUES.mat
 
+Program Description:
+acs_PROCESS_SEABASS processes raw field-collected ac-s measurements following a series of steps. It is outfitted to process raw data contained in ac-s ascii files regardless of ac-s channel number, wavelengths, or orientation of column field headers. Steps are outlined below:
+  1. Reads ascii data into Matlab
+  2. Calculates water column salinity using measurements conductivity (CTD)
+  3. Performs correction for spectral "jumps" caused by ac-s sampling using two holographic gratings
+  4. Subtracts a/c pure-water calibration spectra from field-measured ac-s data**
+  5. Corrects for the optical effects temperature and salinity using Sullivan et al. (2006)
+  6. Corrects for scattering using Rottgers et al. (2013)
+  7. QA/QC ac-s data. Paired ac spectra are flagged and removed if:
+    a. c spectrum contains value less than zero or greater than 4 /m (channel centered at wavelength < 715 nm)
+    b. a spectrum contains value less than zero or greater than c value measured by the same channel (channel centered at wavelength < 715 nm)
