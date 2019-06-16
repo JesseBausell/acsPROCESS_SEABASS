@@ -95,3 +95,26 @@ time_lag(seconds)=elapsed time between cast initiation and data acquisition. Thi
 bin_size=desired depth bin-sizes for binning. User can include as many as he/she wishes.
 
 first_grating=highest chanel number found on ac-s first holographic grating. This can also be thought of as the wavelength index directly before (left side) the "jump" in unprocessed a/c spectra.
+
+
+Metadata Header File Example:
+ac-s metadata template
+Template contains information necessary for the processing of ac-s data files (ASCII) merged with CTD data using WetLabs COMPASS software. Use commas to separate names of investigators and files, but DO NOT leave ANY spaces between words. If a space is unavoidable, use an underscore between words (like_this). Unknown or unavailable information should be indicated with NA. Latitude and longitude should be in decimal degrees and water depth should be in meters. Do not include units of measurement. These will be added later by the program. 
+#### DO NOT ALTER HEADER FIELDS####
+data_file_name=COAST18.012
+data_file_path=/Users/JBausell/Documents/acs_data/
+affiliations=UC_Santa_Cruz
+investigators=Jesse_T_Bausell,_Easter_B_Bunny,Kris_B_Kringle
+contact=jbausell@ucsc.edu
+experiment=COAST
+station=18
+latitude=36.889
+longitude=-121.874
+documents=NA
+water_depth=24
+calibration_files=watercal_a_111021.dat,watercal_c_111021.dat
+date(yyyymmdd)=20111028
+start_time(military_time:HH:MM:SS)=20:01:41
+time_lag(seconds)=30
+bin_size=0.5,1,2
+first_grating=41
