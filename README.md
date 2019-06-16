@@ -40,3 +40,4 @@ acs_PROCESS_SEABASS processes raw field-collected ac-s measurements following a 
   7. QA/QC ac-s data. Paired ac spectra are flagged and removed if:
     a. c spectrum contains value less than zero or greater than 4 /m (400-700 nm)
     b. a spectrum contains value less than zero or greater than c value measured by the same channel (400-700 nm)
+  8. Processed ac-s data are 
