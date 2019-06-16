@@ -1,0 +1,20 @@
+ac-s metadata template
+Template contains information necessary for the processing of ac-s data files (ASCII) merged with CTD data using WetLabs COMPASS software. Use commas to separate names of investigators and files, but DO NOT leave ANY spaces between words. If a space is unavoidable, use an underscore between words (like_this). Unknown or unavailable information should be indicated with NA. Latitude and longitude should be in decimal degrees and water depth should be in meters. Do not include units of measurement. These will be added later by the program. 
+#### DO NOT ALTER HEADER FIELDS####
+data_file_name=insert_here
+data_file_path= insert_here
+affiliations= insert_here
+investigators= insert_here
+contact= insert_here
+experiment= insert_here
+station= insert_here
+latitude= insert_here
+longitude= insert_here
+documents= insert_here
+water_depth= insert_here
+calibration_files= insert_here,insert_here
+date(yyyymmdd)= insert_here
+start_time(military_time:HH:MM:SS)=insert_here
+time_lag(seconds)=insert_here
+bin_size=insert_here
+first_grating=insert_here
