@@ -13,7 +13,7 @@ Station_#_a_bin#.txt* - Seabass-formatted ascii file(s) containing processed & d
 Station_#_c_bin#.txt* - Seabass-formatted ascii file(s) containing processed & depth-binned c spectra
 Station_#ac_offsets.txt - Seabass-formatted ascii file containing the spectral offsets that were used to correct for the reliance of ac-s  on two holographic gratings for sampling
 Station_#_ACS.fig - figure depicting vertical position of ac-s across time (of cast). Used to time-synchronize ac-s and hs6 cast data.
-* - multiple files can be made, depending on how many depth-bin sizes user specifies in metadata_HeaderFile_acs.txt
+*multiple files can be made, depending on how many depth-bin sizes user specifies in metadata_HeaderFile_acs.txt
 
 Required Matlab Scripts and Functions:
 ACS_fileREADER_MS.m
