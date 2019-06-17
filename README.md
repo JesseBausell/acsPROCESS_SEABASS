@@ -30,7 +30,7 @@ Seabass_header_ACS5.mat
 Sullivan_VALUES.mat
 
 Program Description:
-acs_PROCESS_SEABASS processes raw field-collected ac-s measurements following a series of steps. It is outfitted to process raw data contained in ac-s ascii files regardless of ac-s channel number, wavelengths, or orientation of column field headers. Steps are outlined below:
+acsPROCESS_SEABASS processes raw field-collected ac-s measurements following a series of steps. It is outfitted to process raw data contained in ac-s ascii files regardless of ac-s channel number, wavelengths, or orientation of column field headers. Steps are outlined below:
   1. Reads ascii data into Matlab
   2. Calculates water column salinity using measurements conductivity (CTD)
   3. Performs correction for spectral "jumps" caused by ac-s sampling using two holographic gratings
