@@ -88,7 +88,7 @@ calibration_files=names of original ac-s pure-water (DAT) calibration files from
 
 date(yyyymmdd)=indicate date on which ac-s was deployed.
 
-start_time(military_time:HH:MM:SS)=military time at which ac-s cast was initiated. This is indicated in ac-s cast summary file.
+start_time(military_time:HH:MM:SS)=military time at which ac-s cast was initiated. This is indicated in ac-s cast summary file. It should be in GMT.
 
 time_lag(seconds)=elapsed time between cast initiation and data acquisition. This is indicated in ac-s cast summary file.
 
