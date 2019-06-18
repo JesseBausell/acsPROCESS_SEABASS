@@ -118,3 +118,7 @@ start_time(military_time:HH:MM:SS)=20:01:41
 time_lag(seconds)=30
 bin_size=0.5,1,2
 first_grating=41
+
+Röttgers, R., D. McKee, and S.B. Woźniak, Evaluation of scatter corrections for ac-9 absorption measurements in coastal waters. Methods in Oceanography, 2013. 7: p.21-39.
+
+Sullivan, J.M., et al., Hyperspectral temperature and salt dependencies of absorption by water and heavy water in the 400-750 nm spectral range. Applied Optics, 2006. 45(21): p.5294-5309.
