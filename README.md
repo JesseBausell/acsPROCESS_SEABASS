@@ -38,9 +38,9 @@ acsPROCESS_SEABASS processes raw field-collected ac-s measurements following a s
   5. Corrects for the optical effects temperature and salinity using Sullivan et al. (2006)
   6. Corrects for scattering using Rottgers et al. (2013)
   7. QA/QC ac-s data. Paired ac spectra are flagged and removed if:
-    a. c spectrum contains value less than zero or greater than 4 /m (400-700 nm)
-    b. a spectrum contains value less than zero or greater than c value measured by the same channel (400-700 nm)
-  8. Processed ac-s data are timestamped
+    a. c spectrum contains one or more values less than zero or greater than 4 /m (400-700 nm)
+    b. a spectrum contains one or more values less than zero or greater than c value measured by the same channel (400-700 nm)
+  8. Timestamps processed a/c spectra
   9. Produces Seabass-formatted ascii (.txt) file containing spectral offsets (a & c) calculated from holographic grating correction 
   10. Produces SeaBASS-formatted ascii (.txt) file containing time-stamped a/c spectra with depths at which they were sampled
   11. Produces SeaBASS-formatted ascii (.txt) file(s) containing depth-binned a/c average spectra and standard deviations. 
