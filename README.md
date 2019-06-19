@@ -45,6 +45,7 @@ acsPROCESS_SEABASS processes raw field-collected ac-s measurements following a s
   10. Produces SeaBASS-formatted ascii (.txt) file containing time-stamped a/c spectra with depths at which they were sampled
   11. Produces SeaBASS-formatted ascii (.txt) file(s) containing depth-binned a/c average spectra and standard deviations. 
   12. Produces Matlab plot (.fig) detailing ac-s water column position (depth) over time (spectrum index). Plot will contain a user-selected reference point and a time-stamp (which is listed above the plot). Assuming ac-s was deployed simultaneously with hs6, hs6PROCESS_SEABASS.m will use this information to synchronize ac-s and hs6 data. In the event that ac-s and hs6 were deployed independently, the .fig file can be ignored.
+  ** Pure-water a/c spectra undergo holographic grating and Sullivan et al. (2006) temperature corrections before being subtracted from ac-s data.
   
 User Instructions:
   1. Fill out metadata_HeaderFile_acs.txt (as specified below)
@@ -57,7 +58,7 @@ User Instructions:
     b. User selects a reference point on this plot by entering the index of the desired point into the command window.***
     c. User is asked to confirm his/her selection on command window with y/n keys. If user rejects his/her selection, he/she will be           prompted to try again.
     
-*** User-selected reference point (step 6b) can be used to synchroize ac-s cast with other instruments (provided they were deployed simultaneoulsy as a single unit). I recommend chosing the point at which ac-s is on the sea surface immediately before its first descent, as this point can be easily referenced for other instruments, regardless of differences in their sampling frequency. Matlab's data cursor (see figure toolbar) can assist user in determining the index of his/her desired point. 
+*** User-selected reference point (step 6b) can be used later on to synchroize ac-s and hs6 casts (provided they were deployed simultaneoulsy as a single unit). When selectign a reference point on ac-s "time series", choose a conspicuous point that could be easily located on the corresponding hs6 time series. For example, directly following an ascent to the sea surface from depth, or directly prior to a descent. Matlab's data cursor (see figure toolbar) can assist in determining the index of a desired point. 
 
 Filling out metadata_HeaderFile_acs.txt:
 acsPROCESS_SEABASS relies on metadata_HeaderFile_acs.txt to process ac-s data. All information (excluding pure-water MAT files) should be included in this header. A header template (metadata_HeaderFile_acs.txt) indicating important fields is provided in GitHub acsPROCESS_SEABASS repository. When filling out this header file, the first three headers (indicating user instructions) should be left alone. Required information fields contain = signs. USER SHOULD ONLY ALTER TEXT APPEARING ON THE RIGHT HAND SIDE OF =. User should indicate unavailability of desired information with "NA". DO NOT DELETE ROWS! Below are fields contained in metadata_HeaderFile_acs.txt and instructions on how to fill them out. Spaces should never be used in header fields; use underscore instead (_).
